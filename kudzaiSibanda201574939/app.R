@@ -11,7 +11,12 @@ library(ggplot2)
 ui <- dashboardPage(
   
   dashboardHeader(),
-  dashboardSidebar(),
+  dashboardSidebar(
+    selectInput(inputId = 'crime',label = 'select category',selected = unique(data()$Category))
+    
+    
+  ),
+
   dashboardBody()
   
 )

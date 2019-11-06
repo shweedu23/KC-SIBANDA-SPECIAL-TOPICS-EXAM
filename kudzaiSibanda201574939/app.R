@@ -12,12 +12,21 @@ ui <- dashboardPage(
   
   dashboardHeader(),
   dashboardSidebar(
-    selectInput(inputId = 'crime',label = 'select category',selected = unique(data()$Category))
+    selectInput(inputId = 'crime',label = 'select category',selected = unique(data()$Category),choices = data()$Category)
     
     
   ),
 
-  dashboardBody()
+  dashboardBody(
+    
+    fluidRow()
+    
+    
+    
+    
+    
+    
+  )
   
 )
 

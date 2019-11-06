@@ -6,4 +6,5 @@ COPY ./app.R app.R
 
 RUN RScript requirements.R 
 
+
 CMD ["RScript", "app.R"]
